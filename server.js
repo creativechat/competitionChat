@@ -2,7 +2,7 @@
 // create an API server
 const Restify = require('restify');
 const server = Restify.createServer({
-	name: 'MovieMate'
+	name: 'ChatPrototype'
 });
 const PORT = process.env.PORT || 3000;
 
@@ -44,4 +44,4 @@ server.post('/',
 // Subscribe
 f.subscribe();
 
-server.listen(PORT, () => console.log(`MovieMate running on port ${PORT}`));
+server.listen(PORT, () => console.log(`Prototype running on port ${PORT}`));
